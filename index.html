@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function avg(array) {
+        var x = 0;
+
+        for (let i = 0; i < array.length; i++) {
+          x += input[i] / array.length;
+        }
+
+        x = x.toFixed(2);
+        console.log(x);
+
+        if (0 <= x && x <= 70) {
+          console.log("D grade");
+        } else if (71 <= x && x <= 80) {
+          console.log("C grade");
+        } else if (81 <= x && x <= 90) {
+          console.log("B grade");
+        } else {
+          console.log("A grade");
+        }
+      }
+
+      var input = [100, 100, 50, 100];
+      avg(input);
+    </script>
+  </body>
+</html>
